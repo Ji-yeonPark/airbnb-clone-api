@@ -10,3 +10,10 @@ class RoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
         fields = ("name", "price", "bedrooms", "instant_book", "user")
+
+
+class BigRoomSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Room
+        fields = "__all__"
